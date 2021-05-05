@@ -1,0 +1,98 @@
+@font-face { /* Gotham finns inte i google fonts så jag var tvungen att importera det manuellt.*/
+    font-family: Gotham;
+    src: url(Gotham-Light.otf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 8000px;
+}
+
+nav{
+    background-color: #1a1a1a;
+    color: white;
+    height: 100px;
+    width: 100%;
+    font-size: 50px;
+    
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > *{
+    height: 70%;
+    margin-right: 30px;
+}
+
+header{
+    height: 100vh;
+    width: 70%;
+    padding-left: 30%;
+    color: #1a1a1a;
+    
+    display: flex;
+    align-items: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    -webkit-text-stroke: white 5px;
+}
+
+h1{
+    width: 0px;
+}
+
+p{
+    font-family: 'Gotham';
+    font-size: 18px;
+}
+
+.intro{
+    color: white;
+    text-align: center;
+    padding: 10vh 20% 30vh 20%;
+    width: 60%;
+    font-size: 50px;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+h2{
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: black solid 2px;
+    font-size: 40px;
+}
+
+.phone-head{
+    text-align: center;
+    margin: 120px auto 120px auto;
+}
+.phone-head > *{
+    padding: 15px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.phone{
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    justify-self: center;
+}
+
+.icon{
+    width: 40px;
+}
+
+
+/*543*/
