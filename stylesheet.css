@@ -12,6 +12,7 @@ body{
 }
 
 nav{
+    z-index: 99;
     background-color: #1a1a1a;
     color: white;
     height: 100px;
@@ -38,7 +39,7 @@ header{
     align-items: center;
     
     font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
+    font-size: 10vh;
     -webkit-text-stroke: white 5px;
 }
 
@@ -46,9 +47,19 @@ h1{
     width: 0px;
 }
 
+a{
+    text-decoration: none;
+    font-family: 'Gotham';
+    color: #335A96;
+}
+
 p{
     font-family: 'Gotham';
-    font-size: 18px;
+    font-size: 20px;
+}
+
+span{
+    color: #e9c534;
 }
 
 .intro{
@@ -60,13 +71,13 @@ p{
 }
 
 .container{
-    width: 60%;
+    width: 35%;
     margin: auto;
 }
 
 h2{
     font-family: 'Libre Baskerville', serif;
-    border-bottom: black solid 2px;
+    
     font-size: 40px;
 }
 
@@ -82,12 +93,39 @@ h2{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
+    column-gap: 20px;
+}
+
+.service{
+    height: 60%;
+    padding-top: 20px;
+    border-top: black solid 2px;
+    display: grid;
+    grid-template-columns: 20% 60%;
+    grid-template-rows: 50% 50%;
+}
+.service > a{
+    grid-column-start: 2;
 }
 
 .phone{
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     justify-self: center;
+    position: relative;
+}
+
+.screen{
+    background-color: #00a19b;
+
+    z-index: 2;
+    float: left;
+    position: absolute;
+    left: 11px;
+    top: 58px;
+
+    height: 430px;
+    width: 242px;
 }
 
 .icon{
