@@ -47,6 +47,11 @@ h1{
     width: 0px;
 }
 
+h2{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+}
+
 a{
     text-decoration: none;
     font-family: 'Gotham';
@@ -70,15 +75,14 @@ span{
     font-size: 50px;
 }
 
-.container{
-    width: 35%;
+.margin{
+    width: 60%;
     margin: auto;
 }
 
-h2{
-    font-family: 'Libre Baskerville', serif;
-    
-    font-size: 40px;
+.phone-element{
+    width: 35%;
+    margin: auto;
 }
 
 .phone-head{
@@ -87,6 +91,9 @@ h2{
 }
 .phone-head > *{
     padding: 15px;
+}
+.phone-head > h2{
+    border-bottom: black solid 2px;
 }
 
 .grid{
@@ -119,7 +126,6 @@ h2{
     background-color: #00a19b;
 
     z-index: 2;
-    float: left;
     position: absolute;
     left: 11px;
     top: 58px;
@@ -132,5 +138,53 @@ h2{
     width: 40px;
 }
 
+.portfolio{
+    color: white;
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: 200px; 
+}
+.portfolio p{
+    padding: 50px 0px;
+}
 
-/*543*/
+.flexbox{
+    border-top: 2px white solid;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexbox > a{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    color: white;
+}
+
+.flexbox > a > *{
+    border-radius: 15px;
+}
+
+.flexbox img{
+    width: 100%;
+}
+
+.flexbox > a > div{
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 2px solid white;
+    outline-offset: -10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.flexbox p{
+    position: absolute;
+    left: 15px;
+    top: 215px;
+}
