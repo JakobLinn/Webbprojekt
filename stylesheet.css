@@ -7,10 +7,6 @@
     padding: 0px;
 }
 
-body{
-    height: 8000px;
-}
-
 nav{
     z-index: 99;
     background-color: #1a1a1a;
@@ -52,6 +48,11 @@ h2{
     font-size: 40px;
 }
 
+h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 32px;
+}
+
 a{
     text-decoration: none;
     font-family: 'Gotham';
@@ -76,7 +77,7 @@ span{
 }
 
 .margin{
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -151,9 +152,9 @@ span{
 
 .flexbox{
     border-top: 2px white solid;
-    padding: 120px 0px;
+    padding: 80px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -187,4 +188,47 @@ span{
     position: absolute;
     left: 15px;
     top: 215px;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: #1a1a1a;
+    border-top: #00a19b 5px solid;
+}
+footer *{
+    color: white;
+}
+
+.footer-elements{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    padding-top: 80px;
+}
+
+.footer-elements p{
+    margin: 40px 0px;
+    color: #cccccc;
+}
+
+.footer-elements img{
+    width: 100%;
+}
+
+.footer-end{
+    border-top: #cccccc 2px solid;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-end h3{
+    color: #cccccc;
+    display: inline-block;
+}
+.footer-end > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
 }
