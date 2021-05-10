@@ -46,10 +46,6 @@ h1{
     width: 0px;
 }
 
-.white-font{
-    color: white;
-}
-
 h2{
     font-family: 'Libre Baskerville', serif;
     font-size: 40px;
@@ -85,7 +81,8 @@ span{
 
 .margin{
     width: 70%;
-    margin: auto;
+    margin: 100px auto 100px auto;
+    padding: 100px 0px;
 }
 
 .phone-element{
@@ -132,8 +129,6 @@ span{
 }
 
 .screen{
-    background-color: #00a19b;
-
     z-index: 2;
     position: absolute;
     left: 11px;
@@ -147,13 +142,10 @@ span{
     width: 40px;
 }
 
-.portfolio{
-    background-color: #1a1a1a;
+.centered-title{
     text-align: center;
-    padding: 50px 0px;
-    margin-top: 200px; 
 }
-.portfolio p{
+.centered-title p{
     padding: 50px 0px;
 }
 
@@ -196,10 +188,30 @@ span{
     top: 215px;
 }
 
+.carousel-indicators{
+    top: 120px;
+    width: 200px;
+    margin: auto;
+}
+.carousel-indicators li{
+    height: 10px;
+    width: 10px;
+    margin: auto;
+    background-color: #999999;
+    border-radius: 50%;
+}
+#carousel{
+    width: 200px;
+    margin: 120px auto 0px;
+}
+.carousel-inner img{
+    height: 100px;
+    margin: auto;
+}
+
 footer{
-    margin-top: 150px;
     background-color: #1a1a1a;
-    border-top: #00a19b 5px solid;
+    border-top: 5px solid;
 }
 
 .footer-elements{
