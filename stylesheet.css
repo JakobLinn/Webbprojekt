@@ -5,12 +5,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 nav{
     z-index: 99;
     background-color: #1a1a1a;
-    color: white;
     height: 100px;
     width: 100%;
     font-size: 50px;
@@ -29,18 +29,25 @@ header{
     height: 100vh;
     width: 70%;
     padding-left: 30%;
-    color: #1a1a1a;
     
     display: flex;
     align-items: center;
     
     font-family: 'Montserrat', sans-serif;
-    font-size: 10vh;
     -webkit-text-stroke: white 5px;
 }
 
+h1, h2, h3, p{
+    color: #1a1a1a;
+}
+
 h1{
+    font-size: 20vh;
     width: 0px;
+}
+
+.white-font{
+    color: white;
 }
 
 h2{
@@ -69,9 +76,9 @@ span{
 }
 
 .intro{
-    color: white;
     text-align: center;
-    padding: 10vh 20% 30vh 20%;
+    margin: auto;
+    padding: 10vh 0px 30vh 0px;
     width: 60%;
     font-size: 50px;
 }
@@ -110,7 +117,8 @@ span{
     border-top: black solid 2px;
     display: grid;
     grid-template-columns: 20% 60%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% 40%;
+    row-gap: 20%;
 }
 .service > a{
     grid-column-start: 2;
@@ -140,7 +148,6 @@ span{
 }
 
 .portfolio{
-    color: white;
     background-color: #1a1a1a;
     text-align: center;
     padding: 50px 0px;
@@ -162,7 +169,6 @@ span{
     height: 300px;
     width: 300px;
     position: relative;
-    color: white;
 }
 
 .flexbox > a > *{
@@ -195,9 +201,6 @@ footer{
     background-color: #1a1a1a;
     border-top: #00a19b 5px solid;
 }
-footer *{
-    color: white;
-}
 
 .footer-elements{
     text-align: center;
@@ -207,6 +210,7 @@ footer *{
 }
 
 .footer-elements p{
+    font-size: 16px;
     margin: 40px 0px;
     color: #cccccc;
 }
