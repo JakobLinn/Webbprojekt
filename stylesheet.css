@@ -1,15 +1,14 @@
-@font-face { /* Gotham finns inte i google fonts så jag var tvungen att importera det manuellt.*/
+@font-face { /* Gotham finns inte i google fonts så jag var tvungen att importera det utan en <link>-tag.*/
     font-family: Gotham;
-    src: url(Gotham-Light.otf);
+    src: url(fonts/Gotham-Light.otf);
 }
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 nav{
-    z-index: 99;
+    z-index: 3;
     background-color: #1a1a1a;
     height: 100px;
     width: 100%;
@@ -29,41 +28,54 @@ header{
     height: 100vh;
     width: 70%;
     padding-left: 30%;
-    
-    display: flex;
-    align-items: center;
-    
+}
+.text-stroke{
     font-family: 'Montserrat', sans-serif;
     -webkit-text-stroke: white 5px;
+    font-size: 20vh;
+}
+
+header h2{
+    font-size: 80px;
+}
+header h2::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 450px;
+    border-bottom: 10px white solid;
 }
 
 h1, h2, h3, p{
     color: #1a1a1a;
+    margin: 0px;
 }
 
-h1{
-    font-size: 20vh;
-    width: 0px;
-}
 
-h2{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 40px;
-}
-
-h3{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 32px;
-}
+h2,h3{font-family: 'Libre Baskerville', serif;}
+h2{font-size: 40px;}
+h3{font-size: 32px;}
 
 a{
     text-decoration: none;
-    font-family: 'Gotham';
     color: #335A96;
 }
 
+.contact {
+    height: 40px;
+}
+.contact a{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    transition: .2s;
+}
+.contact a:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+
 p{
-    font-family: 'Gotham';
     font-size: 20px;
 }
 
@@ -141,37 +153,41 @@ span{
 .icon{
     width: 40px;
 }
-
-.centered-title{
-    text-align: center;
+.icon-l{
+    width: 180px;
+    padding: 10px
 }
-.centered-title p{
+
+.text-center p{
     padding: 30px 0px;
 }
 
-.flexbox{
-    border-top: 2px white solid;
-    padding: 80px 0px;
+.space-between{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.flexbox > a{
+.cards{
+    border-top: 2px white solid;
+    padding: 80px 0px;
+}
+
+.cards > a{
     height: 300px;
     width: 300px;
     position: relative;
 }
 
-.flexbox > a > *{
+.cards > a > *{
     border-radius: 15px;
 }
 
-.flexbox img{
+.cards img{
     width: 100%;
 }
 
-.flexbox > a > div{
+.cards > a > div{
     background-color: rgba(0, 0, 0, 0.3);
     outline: 2px solid white;
     outline-offset: -10px;
@@ -182,10 +198,23 @@ span{
     top: 0px;
 }
 
-.flexbox p{
+.cards p{
     position: absolute;
     left: 15px;
     top: 215px;
+}
+
+.border-short{
+    padding: 10px;
+    position: relative;
+}
+.border-short::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+    right: 400px;
+    border-bottom: 2px #1a1a1a solid;
 }
 
 .carousel-indicators{
