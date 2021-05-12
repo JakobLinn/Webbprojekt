@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script> <!-- in-view.js https://github.com/protonet/jquery.inview -->
+    <script src="javascript.js"></script>
     <link rel="Stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
@@ -16,13 +18,43 @@
     <title>Deliver | About</title>
 </head>
 <body>
-    <nav>
-        <img src="img/Deliver-v-logo.png" alt="">
-        <div class="text-white">☰</div>
+    <nav class="bg-dark">
+        <a href="index.html"><img class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
+        <div class="text-white" id="menuToggle" onclick="menuToggle()">☰</div>
     </nav>
+
+    <div class="bg-primary h-100 w-100 text-center" id="fadein">
+        <img src="img/D-logo.png">
+    </div>
+
+    <div class="bg-dark h-100 w-100" id="menu">
+        <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
+            <div class="menuHover">
+                <a class="text-white d-block" href="index.html">HOME</a>
+                <a class="text-white d-block" href="about.html">ABOUT</a>
+                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO</a>
+                <div class="text-center" id="dropdown">
+                    <a class="text-white d-block" href="development.html">Web Development</a>
+                    <a class="text-white d-block" href="social.html">Social Media Marketing</a>
+                    <a class="text-white d-block" href="hosting.html">Server Hosting</a>
+                </div>
+                <a class="text-white d-block" href="contact.html">CONTACTS</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center text-center">
+            <div class="w-25 px-5">
+                <a href="https://instagram.com"><img class="icon" src="img/instagram.png" alt="instagram icon"></a>
+                <a href="https://twitter.com"><img class="icon" src="img/twitter.png" alt="twitter icon"></a>
+                <a href="https://facebook.com"><img class="icon" src="img/facebook.png" alt="facebook icon"></a>
+                <a href="https://linkedin.com"><img class="icon" src="img/linkedin.png" alt="linkedin icon"></a>
+                <a href="https://reddit.com"><img class="icon" src="img/reddit.png" alt="reddit icon"></a>
+            </div>
+        </div>
+    </div>
+
     <div>
-        <header class="w-100 space-between">
-            <h1 class="col-1 text-stroke">
+        <header class="space-between">
+            <h1 class="col-1 text-dark text-stroke">
                 HE LLO<span class="text-primary">.</span>
             </h1>
         </header>

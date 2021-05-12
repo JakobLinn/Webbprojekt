@@ -8,11 +8,10 @@
 }
 
 nav{
-    z-index: 3;
-    background-color: #1a1a1a;
+    transition: 1s;
+    z-index: 99;
     height: 100px;
     width: 100%;
-    font-size: 50px;
     
     position: fixed;
     display: flex;
@@ -22,29 +21,61 @@ nav{
 nav > *{
     height: 70%;
     margin-right: 30px;
+    cursor: pointer;
 }
+nav > div{
+    font-size: 50px;
+}
+
+#menu{
+    display: none;
+    position: fixed;
+    font-size: 40px;
+    z-index: 90;
+}
+
+#fadein{
+    position: fixed;
+    padding-top: 20%;
+    z-index: 999;
+}
+
+.menuHover a:hover{
+    text-decoration: none;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+#dropdown{
+    display: none;
+}
+
+::-webkit-scrollbar-track{box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+::-webkit-scrollbar{width: 12px;}
+::-webkit-scrollbar-thumb{background-color: #1a1a1a;}
 
 header{
     height: 100vh;
-    width: 70%;
     padding-left: 30%;
 }
 .text-stroke{
     font-family: 'Montserrat', sans-serif;
     -webkit-text-stroke: white 5px;
+    cursor: default;
     font-size: 20vh;
+    transition: .5s;
+}
+.text-stroke:hover{
+    color: white;
 }
 
 header h2{
     font-size: 80px;
 }
-header h2::before{
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 450px;
-    border-bottom: 10px white solid;
+.line{
+    background-color: white;
+    height: 10px;
+    width: 150px;
 }
 
 h1, h2, h3, p{
@@ -65,23 +96,31 @@ a{
 .contact {
     height: 40px;
 }
-.contact a{
+.contact *{
     border-bottom: 1px solid;
+    border-radius: 5px 5px 0px 0px;
     padding-bottom: 5px;
     transition: .2s;
 }
-.contact a:hover{
+.contact *:hover{
     text-decoration: none;
     font-size: 20px;
+    color: white;
+    background-color: #00a19b;
+}
+
+.zoom{
+    transition: .2s;
+}
+.zoom:hover{
+    transform: scale(1.2);
 }
 
 p{
     font-size: 20px;
 }
 
-span{
-    color: #e9c534;
-}
+.highlight{color: #e9c534;}
 
 .intro{
     text-align: center;
@@ -202,6 +241,7 @@ span{
     position: absolute;
     left: 15px;
     top: 215px;
+    margin-top: 15px;
 }
 
 .border-short{
@@ -242,6 +282,36 @@ span{
     height: 400px;
     margin-top: -100px;
 }
+
+form > *{
+    background-color: #fdfdfd;
+    margin-bottom: 20px;
+    width: 100%;
+}
+input, textarea{
+    border: none;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 20px 0px 2px 2px;
+    outline: none;
+}
+input[type=checkbox]{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+input[type=button]{
+    border: 1px solid #1a1a1a;
+    border-radius: 15px;
+    width: auto;
+    padding: 10px;
+    background-color: #fdfdfd;
+}
+label{
+    cursor: pointer;
+    padding: 0px 20px;
+    margin: 0px;
+}
+
 
 footer{
     background-color: #1a1a1a;

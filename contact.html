@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deliver | Web Development</title>
+    <title>Deliver | Contact Us</title>
 </head>
 <body>
     <nav>
@@ -52,64 +52,75 @@
         </div>
     </div>
 
-    <div class="bg-dark">
-        <header style="background-color: #335A96;" class="space-between">
-            <div>
-                <div class="row w-75">
-                    <h2 id="outview" class="text-white col-7 pl-0 pb-3">Beautiful Web Design</h2>
+    <div class="bg-dark w-100" id="menu">
+        <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
+            <div class="menuHover">
+                <a class="text-white d-block" href="index.html">HOME</a>
+                <a class="text-white d-block" href="about.html">ABOUT</a>
+                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO</a>
+                <div class="text-center" id="dropdown">
+                    <a class="text-white d-block" href="development.html">Web Development</a>
+                    <a class="text-white d-block" href="social.html">Social Media Marketing</a>
+                    <a class="text-white d-block" href="hosting.html">Server Hosting</a>
                 </div>
-                <div class="row w-75">
-                    <div class="line"></div>
-                </div>
-                <div class="row w-75">
-                    <p class="col-8 text-white pl-0 pt-3">
-                        This is what we deliver. Every brand we help build, and every interaction we make must 
-                        not only look beautiful but must feel and function beautifully, too. Delivered in perfection.
-                    </p>
-                </div>
+                <a class="text-white d-block" href="contact.html">CONTACTS</a>
             </div>
-        </header>
-        <div class="margin">
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="text-white mb-5">IT'S ALL ABOUT THE CHEMISTRY</h2>
-                    <p class="text-white">The creation of a Website is one of the most important phases in the branding of a company.</p>
-                    <br>
-                    <p class="text-white">
-                        Originality, beautiful graphics, and great functionality are the three ultimate ingredients 
-                        used to make a concoction of quality web development. Our team of professionals will be able to 
-                        understand customer requests step by step, creating the website of their choosing geared to follow the 
-                        growth of their business. Explore our web design and contact us to start collaborating with us straight away. 
-                    </p>
-                </div>
-                <div class="bg-primary col">
-                    <!--animation-->
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col contact">
-                    <a class="text-white" href="contact.html">CONTACT US</a>
-                </div>
+        </div>
+        <div class="d-flex justify-content-center text-center">
+            <div class="w-25 px-5">
+                <a href="https://instagram.com"><img class="icon" src="img/instagram.png" alt="instagram icon"></a>
+                <a href="https://twitter.com"><img class="icon" src="img/twitter.png" alt="twitter icon"></a>
+                <a href="https://facebook.com"><img class="icon" src="img/facebook.png" alt="facebook icon"></a>
+                <a href="https://linkedin.com"><img class="icon" src="img/linkedin.png" alt="linkedin icon"></a>
+                <a href="https://reddit.com"><img class="icon" src="img/reddit.png" alt="reddit icon"></a>
             </div>
         </div>
     </div>
 
-    <div class="text-center">
-        <div class="margin">
-            <img class="icon-l" src="img/cart.png" alt="">
-            <h2 class="border-short">YOUR DIGITAL WEB SHOP</h2>
-            <p class="w-75 mx-auto">
-                Create you E-commerce website with Deliver, 
-                we can build good looking and well performing web shops for all types of products. 
-                Collaborate with us, and we will create an e-business that allows you to sell your services directly on the web. 
-                Let yourself be surprised by what online commerce can bring to your business!
-            </p>
-            <div id="inview" class="contact">
-                <a class="text-dark border-dark" href="contact.html">CONTACT US</a>
+    <div class="bg-dark">
+        <header class="space-between text-center">
+            <div class="">
+                <div class="row w-75 d-flex justify-content-center mb-4">
+                    <h2 id="outview" class="text-white">CONTACT US<span class="text-primary">.</span></h2>
+                    <h3 class="text-white">Let's Keep In Touch!</h3>
+                </div>
+                <div class="row w-75 d-flex justify-content-center">
+                    <p class="col-8 text-white border-top border-primary">
+                        If you want to collaborate with us or simply have some questions about our services, do not hesitate to contact us!
+                    </p>
+                </div>
             </div>
-        </div>
+        </header>
     </div>
-    
+
+    <div class="margin">
+        <p class="text-danger">* required</p>
+        <form action="">
+            <h3>What Do You Want To Talk About? *</h3>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" id="development">
+                <label for="development">Web Development</label>
+                <input type="checkbox" id="social">
+                <label for="social">Social Media Marketing</label>
+                <input type="checkbox" id="hosting">
+                <label for="hosting">Server Hosting</label>
+                <input type="checkbox" id="other">
+                <label for="other">Other</label>
+            </div>
+            <h3>Name and Surname *</h3>
+            <input type="text" placeholder="Name Surname">
+            <h3 id="inview">E-Mail *</h3>
+            <input type="email" placeholder="YourMail@mail.com">
+            <h3>Phone</h3>
+            <input type="tel" placeholder="123-456-789">
+            <h3>Message *</h3>
+            <textarea name="" id="" rows="1" placeholder="Write your message here"></textarea>
+            <div class="contact">
+                <input class="zoom" type="button" value="SEND">
+            </div>
+        </form>
+    </div>
+
     <footer class="border-primary">
         <div class="w-75 mx-auto">
             <div>
