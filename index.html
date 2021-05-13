@@ -16,6 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver | Home</title>
+    <script> 
+        window.onload = startPhoneHover;
+    </script>
 </head>
 <body>
     <nav style="background-color: #1a1a1a;">
@@ -29,10 +32,10 @@
 
     <div class="bg-dark h-100 w-100" id="menu">
         <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
-            <div class="menuHover">
+            <div class="menu-hover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
-                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO</a>
+                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO ▾</a>
                 <div class="text-center" id="dropdown">
                     <a class="text-white d-block" href="development.html">Web Development</a>
                     <a class="text-white d-block" href="social.html">Social Media Marketing</a>
@@ -67,37 +70,61 @@
     <div class="phone-element">
         <div class="phone-head">
             <h2 id="inview">Make It <span class="text-primary">Đeliver</span></h2>
-            <p>This is What We Do.</p>
+            <p>These Are Our Services</p>
         </div>
         <div class="grid">
-            <div>
+            <div class="service">
                 <h2 style="color: #335A96;">01</h2>
-                <div class="service">
+                <div class="service-element">
                     <img class="icon" src="img/lightbulb.png" alt="">
                     <p>Web Development</p>
-                    <a href="">Learn More ›</a>
+                    <a href="development.html">Learn More ›</a>
                 </div>
             </div>
-            <div>
+            <div class="service">
                 <h2 style="color: #E9C534;">02</h2>
-                <div class="service">
+                <div class="service-element">
                     <img class="icon" src="img/social.png" alt="">
                     <p>Social Media Marketing</p>
-                    <a href="">Learn More ›</a>
+                    <a href="social.html">Learn More ›</a>
                 </div>
             </div>
-            <div>
+            <div class="service">
                 <h2 style="color: #FA4D3C;">03</h2>
-                <div class="service">
+                <div class="service-element">
                     <img class="icon" src="img/server.png" alt="">
                     <p>Server Hosting</p>
-                    <a href="">Learn More ›</a>
+                    <a href="hosting.html">Learn More ›</a>
                 </div>
             </div>
             <div class="phone">
                 <img src="img/phone.png" alt="">
-                <div class="screen bg-primary">
-
+                <div class="screen bg-primary text-center d-inline">
+                    <img class="w-75" src="img/D-logo.png" alt="">
+                    <p class="text-white w-75 m-auto p-1 border-top">
+                        This is what we Deliver.
+                    </p>
+                </div>
+                <div style="background-color: #335A96;" class="screen text-center p-2">
+                    <img class="w-75 p-3" src="img/lightbulb-w.png" alt="">
+                    <p class="text-white w-75 m-auto border-top">
+                        High-quality and ground breaking web development that 
+                        caters to the need of the client.
+                    </p>
+                </div>
+                <div style="background-color: #E9C534;" class="screen text-center p-2">
+                    <img class="w-75 p-3" src="img/social-w.png" alt="">
+                    <p class="text-white w-75 m-auto border-top">
+                        Amazing marketing strategies made by professionals with 
+                        decades of experience
+                    </p>
+                </div>                
+                <div style="background-color: #FA4D3C;" class="screen text-center p-2">
+                    <img class="w-75 p-3" src="img/server-w.png" alt="">
+                    <p class="text-white w-75 m-auto border-top">
+                        Powerfull servers ready to help your project with great Up-Time at 
+                        an affordabe price.
+                    </p>
                 </div>
             </div>
         </div>

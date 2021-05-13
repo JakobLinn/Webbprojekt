@@ -32,7 +32,7 @@
             <div class="menuHover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
-                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO</a>
+                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO ▾</a>
                 <div class="text-center" id="dropdown">
                     <a class="text-white d-block" href="development.html">Web Development</a>
                     <a class="text-white d-block" href="social.html">Social Media Marketing</a>
@@ -95,7 +95,7 @@
 
     <div class="margin">
         <p class="text-danger">* required</p>
-        <form action="">
+        <form onsubmit="return false;">
             <h3>What Do You Want To Talk About? *</h3>
             <div class="d-flex align-items-center">
                 <input type="checkbox" id="development">
@@ -105,18 +105,18 @@
                 <input type="checkbox" id="hosting">
                 <label for="hosting">Server Hosting</label>
                 <input type="checkbox" id="other">
-                <label for="other">Other</label>
+                <label for="other">Other Topic</label>
             </div>
             <h3>Name and Surname *</h3>
-            <input type="text" placeholder="Name Surname">
+            <input type="text" placeholder="Name Surname" required>
             <h3 id="inview">E-Mail *</h3>
-            <input type="email" placeholder="YourMail@mail.com">
+            <input type="email" placeholder="YourMail@mail.com" required>
             <h3>Phone</h3>
             <input type="tel" placeholder="123-456-789">
             <h3>Message *</h3>
-            <textarea name="" id="" rows="1" placeholder="Write your message here"></textarea>
+            <textarea name="" id="" rows="1" placeholder="Write your message here" required></textarea>
             <div class="contact">
-                <input class="zoom" type="button" value="SEND">
+                <input class="zoom" type="submit" onclick="validation();" value="SEND">
             </div>
         </form>
     </div>

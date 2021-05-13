@@ -9,6 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script> <!-- in-view.js https://github.com/protonet/jquery.inview -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />     <!--Swiper https://swiperjs.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>           <!--/Swiper-->
     <script src="javascript.js"></script>
     <link rel="Stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -16,8 +20,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver | About</title>
+    <script>window.onload = startTimeline;</script>
 </head>
-<body>
+<body onload="startTimeline()">
     <nav class="bg-dark">
         <a href="index.html"><img class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
         <div class="text-white" id="menuToggle" onclick="menuToggle()">☰</div>
@@ -32,7 +37,7 @@
             <div class="menuHover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
-                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO</a>
+                <a class="text-white d-block border-bottom" id="dropdownToggle" onclick="dropdownToggle()" href="#">WE DO ▾</a>
                 <div class="text-center" id="dropdown">
                     <a class="text-white d-block" href="development.html">Web Development</a>
                     <a class="text-white d-block" href="social.html">Social Media Marketing</a>
@@ -72,16 +77,113 @@
         </div>
     </div>
 
-    <div class="timeline bg-dark">
+    <div class="timeline-container bg-dark">
         <div class="space-between px-5">
             <h3 class="text-white">ABOUT US</h3>
             <div>
                 <p class="text-white d-inline-block">Click or Drag to Explore</p>
-                <img class="icon mx-3" src="img/arrow-l.png" alt="">
-                <img class="icon mx-3" src="img/arrow-r.png" alt="">
+                <img class="icon mx-3 timeline-prev" src="img/arrow-l.png" alt="">
+                <img class="icon mx-3 timeline-next" src="img/arrow-r.png" alt="">
             </div>
         </div>
-
+        <div class="timeline">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="marker h-100">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="text bg-transparent text-left">
+                                <h3 class="text-white pb-4">They Say If You Don't Try, You Can Never Succeed.</h3>
+                                <p class="text-white">
+                                    So we tried! A hot summer in 1996 a couple of pals started doing web development in a garage in Jönköping, Sweden.
+                                </p>
+                            </div>
+                            <div class="year bg-transparent">
+                                <h3 class="text-primary">1996</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="marker h-100">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="text bg-transparent text-left">
+                                <h3 class="text-white pb-4">We Have Made Conquest.</h3>
+                                <p class="text-white">
+                                    In a few short years, Deliver had captured the hearts of all swedes. 
+                                </p>
+                            </div>
+                            <div class="year bg-transparent">
+                                <h3 class="text-primary">1999</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="marker h-100">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="text bg-transparent text-left">
+                                <h3 class="text-white pb-4">Mind-blowing Quality.</h3>
+                                <p class="text-white">
+                                    We had begun to offer unique and personalized services. Our goal is to make a difference.
+                                </p>
+                            </div>
+                            <div class="year bg-transparent">
+                                <h3 class="text-primary">2012</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="marker h-100">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="text bg-transparent text-left">
+                                <h3 class="text-white pb-4">We Went Internationall!</h3>
+                                <p class="text-white">
+                                    We started creating projects that were used world whide, in everyone's reach. 
+                                    We told stories and communicated ideas to let the whole world know.
+                                </p>
+                            </div>
+                            <div class="year bg-transparent">
+                                <h3 class="text-primary">2014</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="marker h-100">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="text bg-transparent text-left">
+                                <h3 class="text-white pb-4">The Cutting Edge of the Internet.</h3>
+                                <p class="text-white">
+                                    We always take pride in our modernisation. With a bit of technology, 
+                                    and allot of expertise, anything is possible!
+                                </p>
+                            </div>
+                            <div class="year bg-transparent">
+                                <h3 class="text-primary">2016</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="marker h-100">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                            <div class="text bg-transparent text-left">
+                                <h3 class="text-white pb-4">Who Knows What This Year Has in Store For Us.</h3>
+                                <p class="text-white">
+                                    Feel free to join us!
+                                </p>
+                            </div>
+                            <div class="year bg-transparent">
+                                <h3 class="text-primary">2021</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+        </div>
     </div>
 
     <footer class="border-primary">
