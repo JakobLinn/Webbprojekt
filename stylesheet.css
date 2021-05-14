@@ -47,6 +47,7 @@ nav > div{
 }
 
 #dropdown{display: none;}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar-track{box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
 ::-webkit-scrollbar{width: 12px;}
@@ -71,7 +72,7 @@ header{
 }
 
 header h2{
-    font-size: 80px;
+    font-size: 4vw;
 }
 .line{
     background-color: white;
@@ -126,7 +127,7 @@ a{
     margin: auto;
     padding: 10vh 0px 30vh 0px;
     width: 60%;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .margin{
@@ -137,7 +138,7 @@ a{
 
 /* TELEFONEN */
 .phone-element{
-    width: 35%;
+    width: 50%;
     margin: auto;
 }
 
@@ -152,34 +153,19 @@ a{
     border-bottom: black solid 2px;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33% 33% 33%;
-    column-gap: 20px;
-}
-
 .service{
     transition: .2s;
+    height: 150px;
 }
 
 .service-element{
     border-top: black solid 2px;
     padding-top: 20px;
-    display: grid;
-    grid-template-columns: 20% 60%;
-    grid-template-rows: 40% 40%;
-    row-gap: 20%;
-}
-.service-element > a{
-    grid-column-start: 2;
 }
 
 .phone{
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    justify-self: center;
     position: relative;
+    float: right;
 }
 
 .screen{
@@ -199,10 +185,10 @@ a{
 }
 .icon-l{
     width: 180px;
-    padding: 10px
+    padding-bottom: 10px;
 }
 
-.text-center p{
+[class*='text-'] p{
     padding: 30px 0px;
 }
 
@@ -219,9 +205,9 @@ a{
 }
 
 .cards > a{
-    height: 300px;
     width: 300px;
     position: relative;
+    margin-top: 30px;
 }
 
 .cards > a > *{
@@ -246,23 +232,7 @@ a{
 .cards p{
     position: absolute;
     left: 15px;
-    top: 215px;
-    margin-top: 15px;
-}
-
-
-/* KORT BORDER */
-.border-short{
-    padding: 10px;
-    position: relative;
-}
-.border-short::before{
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 400px;
-    right: 400px;
-    border-bottom: 2px #1a1a1a solid;
+    bottom: -20px;
 }
 
 /* CAROUSEL */
@@ -325,7 +295,7 @@ a{
     opacity: initial;
 }
 
-.line{
+.marker-line{
     background-color: #999999;
     height: 100%;
     width: 1px;
@@ -342,7 +312,7 @@ a{
 .text{
     width: 80%;
     position: absolute;
-    top: 400px;
+    top: 300px;
     left: 350px;
 }
 
@@ -351,7 +321,7 @@ a{
     top: 400px;
     left: -180px;
 }
-.year h3{font-size: 180px;}
+.year h3{font-size: 10vw;}
 
 /* FORM */
 form > *{
@@ -371,6 +341,7 @@ input[type=checkbox]{
     cursor: pointer;
     height: 20px;
     width: 20px;
+    margin-right: 5px;
 }
 
 input[type=submit]{
@@ -383,8 +354,8 @@ input[type=submit]{
 
 label{
     cursor: pointer;
-    padding: 0px 20px;
-    margin: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -395,8 +366,8 @@ footer{
 
 .footer-elements{
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
+    display: flex;
+    justify-content: center;
     padding-top: 80px;
 }
 
@@ -406,7 +377,7 @@ footer{
     color: #cccccc;
 }
 
-.footer-elements img{
+.footer-elements *{
     width: 100%;
 }
 
@@ -426,4 +397,33 @@ footer{
     align-items: center;
     justify-content: space-around;
     width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-elements{
+        flex-direction: column;
+    }
+    .footer-elements > div:last-child{
+        order: -1;
+    }
+    .footer-end{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-end > div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .year{
+        transform: rotate(270deg);
+        top: 400px;
+        left: -50px;
+    }
+    .text{
+        width: 100%;
+        top: 250px;
+        left: 150px;
+    }
 }

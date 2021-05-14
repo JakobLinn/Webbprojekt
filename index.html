@@ -16,13 +16,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver | Home</title>
+    <link rel="icon" href="img/title-logo.png" type="image/icon type">
     <script> 
         window.onload = startPhoneHover;
     </script>
 </head>
 <body>
     <nav style="background-color: #1a1a1a;">
-        <a href="index.html"><img class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
+        <a href="index.html"><img id="logo" class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
         <div class="text-white" id="menuToggle" onclick="menuToggle()">☰</div>
     </nav>
 
@@ -31,7 +32,7 @@
     </div>
 
     <div class="bg-dark h-100 w-100" id="menu">
-        <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
+        <div class="text-center h-75 w-100 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
             <div class="menu-hover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
@@ -63,8 +64,10 @@
                 <span class="text-stroke">IT</span> 
             </h1>
         </header>
-        <p class="intro text-white">We Create Courageous Websites That <span  class="highlight">Empower Companies</span> 
-            and <span class="highlight">Move People To Take Action</span>.</p>
+        <p class="intro text-white">
+            We Create Courageous Websites That <span  class="highlight">Empower Companies</span> 
+            and <span class="highlight">Move People To Take Action</span>.
+        </p>
     </div>
 
     <div class="phone-element">
@@ -72,87 +75,100 @@
             <h2 id="inview">Make It <span class="text-primary">Đeliver</span></h2>
             <p>These Are Our Services</p>
         </div>
-        <div class="grid">
-            <div class="service">
-                <h2 style="color: #335A96;">01</h2>
-                <div class="service-element">
-                    <img class="icon" src="img/lightbulb.png" alt="">
-                    <p>Web Development</p>
-                    <a href="development.html">Learn More ›</a>
+        <div class="space-between">
+            <div class="w-100">
+                <div class="service">
+                    <h2 style="color: #335A96;">01</h2>
+                    <div class="service-element">
+                        <img class="icon float-left mr-4 mt-2" src="img/lightbulb.png" alt="">
+                        <div class="float-left">
+                            <p>Web Development</p>
+                            <a href="development.html">Learn More ›</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <h2 style="color: #E9C534;">02</h2>
+                    <div class="service-element">
+                        <img class="icon float-left mr-4 mt-2" src="img/social.png" alt="">
+                        <div class="float-left">
+                            <p>Social Media Marketing</p>
+                            <a href="social.html">Learn More ›</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <h2 style="color: #FA4D3C;">03</h2>
+                    <div class="service-element">
+                        <img class="icon float-left mr-4 mt-2" src="img/server.png" alt="">
+                        <div class="float-left">
+                            <p>Server Hosting</p>
+                            <a href="hosting.html">Learn More ›</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="service">
-                <h2 style="color: #E9C534;">02</h2>
-                <div class="service-element">
-                    <img class="icon" src="img/social.png" alt="">
-                    <p>Social Media Marketing</p>
-                    <a href="social.html">Learn More ›</a>
-                </div>
-            </div>
-            <div class="service">
-                <h2 style="color: #FA4D3C;">03</h2>
-                <div class="service-element">
-                    <img class="icon" src="img/server.png" alt="">
-                    <p>Server Hosting</p>
-                    <a href="hosting.html">Learn More ›</a>
-                </div>
-            </div>
-            <div class="phone">
-                <img src="img/phone.png" alt="">
-                <div class="screen bg-primary text-center d-inline">
-                    <img class="w-75" src="img/D-logo.png" alt="">
-                    <p class="text-white w-75 m-auto p-1 border-top">
-                        This is what we Deliver.
-                    </p>
-                </div>
-                <div style="background-color: #335A96;" class="screen text-center p-2">
-                    <img class="w-75 p-3" src="img/lightbulb-w.png" alt="">
-                    <p class="text-white w-75 m-auto border-top">
-                        High-quality and ground breaking web development that 
-                        caters to the need of the client.
-                    </p>
-                </div>
-                <div style="background-color: #E9C534;" class="screen text-center p-2">
-                    <img class="w-75 p-3" src="img/social-w.png" alt="">
-                    <p class="text-white w-75 m-auto border-top">
-                        Amazing marketing strategies made by professionals with 
-                        decades of experience
-                    </p>
-                </div>                
-                <div style="background-color: #FA4D3C;" class="screen text-center p-2">
-                    <img class="w-75 p-3" src="img/server-w.png" alt="">
-                    <p class="text-white w-75 m-auto border-top">
-                        Powerfull servers ready to help your project with great Up-Time at 
-                        an affordabe price.
-                    </p>
+            <div class="w-100 d-none d-lg-block">
+                <div class="phone">
+                    <img src="img/phone.png" alt="">
+                    <div class="screen bg-primary text-center d-inline">
+                        <img class="w-75" src="img/D-logo.png" alt="">
+                        <p class="text-white w-75 m-auto p-1 border-top">
+                            This is what we Deliver.
+                        </p>
+                    </div>
+                    <div style="background-color: #335A96;" class="screen text-center p-2">
+                        <img class="w-75 p-3" src="img/lightbulb-w.png" alt="">
+                        <p class="text-white w-75 m-auto border-top">
+                            High-quality and ground breaking web development that 
+                            caters to the need of the client.
+                        </p>
+                    </div>
+                    <div style="background-color: #E9C534;" class="screen text-center p-2">
+                        <img class="w-75 p-3" src="img/social-w.png" alt="">
+                        <p class="text-white w-75 m-auto border-top">
+                            Amazing marketing strategies made by professionals with 
+                            decades of experience
+                        </p>
+                    </div>                
+                    <div style="background-color: #FA4D3C;" class="screen text-center p-2">
+                        <img class="w-75 p-3" src="img/server-w.png" alt="">
+                        <p class="text-white w-75 m-auto border-top">
+                            Powerfull servers ready to help your project with great Up-Time at 
+                            an affordabe price.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="text-center bg-dark">
+    <div class="text-lg-center text-left bg-dark">
         <div class="margin">
             <h2 class="text-white">PORTFOLIO</h2>
-            <p class="text-white w-75 mx-auto">
+            <p class="text-white w-75 mx-lg-auto">
                 Take a look at the projects we have collaborated in. We put our blood, 
                 sweat and tears into these works to make something we are proud of. 
                 Something <span class="highlight">TRENDY</span>, <span class="highlight">UNIQUE</span> and <span class="highlight">BEUTIFUL</span>.
             </p>
-            <div class="cards space-between">
+            <div class="cards flex-lg-row flex-column space-between">
                 <a class="zoom" href="https://paulinengarten.de/">
                     <img src="img/paulinengarten.PNG" alt="">
-                    <div></div>
-                    <p class="text-white">Paulinen Garten</p>
+                    <div>
+                        <p class="text-white">Paulinen Garten</p>
+                    </div>
                 </a>
                 <a class="zoom" href="https://outofthevalley.co.uk/">
                     <img src="img/outofthevalley.PNG" alt="">
-                    <div></div>
-                    <p class="text-white">Out Of The Valley</p>
+                    <div>
+                        <p class="text-white">Out Of The Valley</p>
+                    </div>
                 </a>
                 <a class="zoom" href="https://www.amawaste.co.uk/">
                     <img src="img/amawastemanagement.png" alt="">
-                    <div></div>
-                    <p class="text-white">AMA Waste Management</p>
+                    <div>
+                        <p class="text-white">AMA Waste Management</p>
+                    </div>
                 </a>
             </div>
         </div>
@@ -205,7 +221,9 @@
         <div class="w-75 mx-auto">
             <div>
                 <div class="footer-elements">
-                    <img src="img/D-logo.png" alt="">
+                    <div class="d-none d-lg-block">
+                        <img src="img/D-logo.png" alt="">
+                    </div>
                     <div>
                         <h3 class="text-white">Services</h3>
                         <a href="development.html"><p>Web Development</p></a>
@@ -218,10 +236,12 @@
                         <a href="https://outofthevalley.co.uk/"><p>Out of the Valley</p></a>
                         <a href="https://www.amawaste.co.uk/"><p>AMA Waste Management</p></a>
                     </div>
-                    <a href="https://github.com/JakobLinn/Webbprojekt">
-                        <img class="w-75" src="img/githublogo-w.png" alt="">
-                        <h3 class="text-white">Visit Our Github!</h3>
-                    </a>
+                    <div class="d-none d-lg-block">
+                        <a href="https://github.com/JakobLinn/Webbprojekt">
+                            <img class="w-75" src="img/githublogo-w.png" alt="">
+                            <h3 class="text-white">Visit Our Github!</h3>
+                        </a>
+                    </div>
                     <div>
                         <img src="img/Deliver-v-logo.png" alt="">
                         <p>information@deliver.com</p>
@@ -230,9 +250,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer-end">
-                <div>
+                <div class="d-none d-lg-flex">
                     <img class="icon" src="img/copyright.png" alt="Copyright icon">
                     <h3>Deliver Inc. 2021</h3>
                 </div>

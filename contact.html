@@ -16,10 +16,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver | Contact Us</title>
+    <link rel="icon" href="img/title-logo.png" type="image/icon type">
 </head>
 <body>
     <nav>
-        <a href="index.html"><img class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
+        <a href="index.html"><img id="logo" class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
         <div class="text-white" id="menuToggle" onclick="menuToggle()">☰</div>
     </nav>
 
@@ -28,7 +29,7 @@
     </div>
 
     <div class="bg-dark h-100 w-100" id="menu">
-        <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
+        <div class="text-center h-75 w-100 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
             <div class="menuHover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
@@ -97,15 +98,23 @@
         <p class="text-danger">* required</p>
         <form onsubmit="return false;">
             <h3>What Do You Want To Talk About? *</h3>
-            <div class="d-flex align-items-center">
-                <input type="checkbox" id="development">
-                <label for="development">Web Development</label>
-                <input type="checkbox" id="social">
-                <label for="social">Social Media Marketing</label>
-                <input type="checkbox" id="hosting">
-                <label for="hosting">Server Hosting</label>
-                <input type="checkbox" id="other">
-                <label for="other">Other Topic</label>
+            <div class="d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
+                <label for="development">
+                    <input type="checkbox" id="development">
+                    Web Development
+                </label>
+                <label for="social">
+                    <input type="checkbox" id="social">
+                    Social Media Marketing
+                </label>
+                <label for="hosting">
+                    <input type="checkbox" id="hosting">
+                    Server Hosting
+                </label>
+                <label for="other">
+                    <input type="checkbox" id="other">
+                    Other Topic
+                </label>
             </div>
             <h3>Name and Surname *</h3>
             <input type="text" placeholder="Name Surname" required>
@@ -125,7 +134,9 @@
         <div class="w-75 mx-auto">
             <div>
                 <div class="footer-elements">
-                    <img src="img/D-logo.png" alt="">
+                    <div class="d-none d-lg-block">
+                        <img src="img/D-logo.png" alt="">
+                    </div>
                     <div>
                         <h3 class="text-white">Services</h3>
                         <a href="development.html"><p>Web Development</p></a>
@@ -138,10 +149,12 @@
                         <a href="https://outofthevalley.co.uk/"><p>Out of the Valley</p></a>
                         <a href="https://www.amawaste.co.uk/"><p>AMA Waste Management</p></a>
                     </div>
-                    <a href="https://github.com/JakobLinn/Webbprojekt">
-                        <img class="w-75" src="img/githublogo-w.png" alt="">
-                        <h3 class="text-white">Visit Our Github!</h3>
-                    </a>
+                    <div class="d-none d-lg-block">
+                        <a href="https://github.com/JakobLinn/Webbprojekt">
+                            <img class="w-75" src="img/githublogo-w.png" alt="">
+                            <h3 class="text-white">Visit Our Github!</h3>
+                        </a>
+                    </div>
                     <div>
                         <img src="img/Deliver-v-logo.png" alt="">
                         <p>information@deliver.com</p>
@@ -151,7 +164,7 @@
                 </div>
             </div>
             <div class="footer-end">
-                <div>
+                <div class="d-none d-lg-flex">
                     <img class="icon" src="img/copyright.png" alt="Copyright icon">
                     <h3>Deliver Inc. 2021</h3>
                 </div>

@@ -16,10 +16,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver | Web Development</title>
+    <link rel="icon" href="img/title-logo.png" type="image/icon type">
 </head>
 <body>
     <nav>
-        <a href="index.html"><img class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
+        <a href="index.html"><img id="logo" class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
         <div class="text-white" id="menuToggle" onclick="menuToggle()">☰</div>
     </nav>
 
@@ -28,7 +29,7 @@
     </div>
 
     <div class="bg-dark h-100 w-100" id="menu">
-        <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
+        <div class="text-center h-75 w-100 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
             <div class="menuHover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
@@ -62,7 +63,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="row w-75">
-                    <p class="col-8 text-white pl-0 pt-3">
+                    <p class="col-lg-8 col-12 text-white text-lg-left pl-0 pt-3">
                         This is what we deliver. Every brand we help build, and every interaction we make must 
                         not only look beautiful but must feel and function beautifully, too. Delivered in perfection.
                     </p>
@@ -71,7 +72,7 @@
         </header>
         <div class="margin">
             <div class="row">
-                <div class="col-8">
+                <div class="col-lg-8 col-12">
                     <h2 class="text-white mb-5">IT'S ALL ABOUT THE CHEMISTRY</h2>
                     <p class="text-white">The creation of a Website is one of the most important phases in the branding of a company.</p>
                     <br>
@@ -91,11 +92,11 @@
         </div>
     </div>
 
-    <div class="text-center">
+    <div class="text-lg-center text-left">
         <div class="margin">
             <img class="icon-l" src="img/cart.png" alt="">
-            <h2 class="border-short">YOUR DIGITAL WEB SHOP</h2>
-            <p class="w-75 mx-auto">
+            <h2 class="text-lg-center text-left p-0">YOUR DIGITAL WEB SHOP</h2>
+            <p class="w-75 mx-lg-auto text-lg-center ml-0 text-left">
                 Create you E-commerce website with Deliver, 
                 we can build good looking and well performing web shops for all types of products. 
                 Collaborate with us, and we will create an e-business that allows you to sell your services directly on the web. 
@@ -111,7 +112,9 @@
         <div class="w-75 mx-auto">
             <div>
                 <div class="footer-elements">
-                    <img src="img/D-logo.png" alt="">
+                    <div class="d-none d-lg-block">
+                        <img src="img/D-logo.png" alt="">
+                    </div>
                     <div>
                         <h3 class="text-white">Services</h3>
                         <a href="development.html"><p>Web Development</p></a>
@@ -124,10 +127,12 @@
                         <a href="https://outofthevalley.co.uk/"><p>Out of the Valley</p></a>
                         <a href="https://www.amawaste.co.uk/"><p>AMA Waste Management</p></a>
                     </div>
-                    <a href="https://github.com/JakobLinn/Webbprojekt">
-                        <img class="w-75" src="img/githublogo-w.png" alt="">
-                        <h3 class="text-white">Visit Our Github!</h3>
-                    </a>
+                    <div class="d-none d-lg-block">
+                        <a href="https://github.com/JakobLinn/Webbprojekt">
+                            <img class="w-75" src="img/githublogo-w.png" alt="">
+                            <h3 class="text-white">Visit Our Github!</h3>
+                        </a>
+                    </div>
                     <div>
                         <img src="img/Deliver-v-logo.png" alt="">
                         <p>information@deliver.com</p>
@@ -137,7 +142,7 @@
                 </div>
             </div>
             <div class="footer-end">
-                <div>
+                <div class="d-none d-lg-flex">
                     <img class="icon" src="img/copyright.png" alt="Copyright icon">
                     <h3>Deliver Inc. 2021</h3>
                 </div>

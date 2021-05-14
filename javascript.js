@@ -50,9 +50,17 @@ function startPhoneHover(){
     });
 }
 
-function startTimeline(){
-    console.log("test");
+// Byter logo beroende på skärm-bredd
+window.onresize = function () {
+    var image = document.getElementById('logo');
+    if (window.innerWidth < 350) {
+        image.setAttribute("src", "img/D-t-logo.png");
+    } else {
+        image.setAttribute("src", "img/Deliver-t-logo.png");
+    }
+}
 
+function startTimeline(){
     const swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         centeredSlides: true,

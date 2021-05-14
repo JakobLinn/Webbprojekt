@@ -20,11 +20,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deliver | About</title>
+    <link rel="icon" href="img/title-logo.png" type="image/icon type">
     <script>window.onload = startTimeline;</script>
 </head>
 <body onload="startTimeline()">
     <nav class="bg-dark">
-        <a href="index.html"><img class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
+        <a href="index.html"><img id="logo" class="h-100" src="img/Deliver-t-logo.png" alt=""></a>
         <div class="text-white" id="menuToggle" onclick="menuToggle()">☰</div>
     </nav>
 
@@ -33,7 +34,7 @@
     </div>
 
     <div class="bg-dark h-100 w-100" id="menu">
-        <div class="text-center h-75 w-25 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
+        <div class="text-center h-75 w-100 margin mb-5 pt-5 d-flex align-items-center justify-content-center">
             <div class="menuHover">
                 <a class="text-white d-block" href="index.html">HOME</a>
                 <a class="text-white d-block" href="about.html">ABOUT</a>
@@ -59,7 +60,7 @@
 
     <div>
         <header class="space-between">
-            <h1 class="col-1 text-dark text-stroke">
+            <h1 class="col-1 text-dark text-stroke" style="font-size: 20vw;">
                 HE LLO<span class="text-primary">.</span>
             </h1>
         </header>
@@ -73,11 +74,11 @@
                 We are social and open minded individuals with an avid support for new discoveries. 
                 The Soul of our company lives in our team.
             </p>
-            <p class="text-white">Now sit tight, while we have a timeline of our history to tell you.</p>
+            <p class="text-white bg-dark d-none d-md-block">Now sit tight, while we have a timeline of our history to tell you.</p>
         </div>
     </div>
 
-    <div class="timeline-container bg-dark">
+    <div class="timeline-container bg-dark d-none d-md-block">
         <div class="space-between px-5">
             <h3 class="text-white">ABOUT US</h3>
             <div>
@@ -92,9 +93,9 @@
                     <div class="swiper-slide">
                         <div class="marker h-100">
                             <div class="dot"></div>
-                            <div class="line"></div>
+                            <div class="marker-line"></div>
                             <div class="text bg-transparent text-left">
-                                <h3 class="text-white pb-4">They Say If You Don't Try, You Can Never Succeed.</h3>
+                                <h3 class="text-white pb-1">They Say If You Don't Try, You Can Never Succeed.</h3>
                                 <p class="text-white">
                                     So we tried! A hot summer in 1996 a couple of pals started doing web development in a garage in Jönköping, Sweden.
                                 </p>
@@ -107,7 +108,7 @@
                     <div class="swiper-slide">
                         <div class="marker h-100">
                             <div class="dot"></div>
-                            <div class="line"></div>
+                            <div class="marker-line"></div>
                             <div class="text bg-transparent text-left">
                                 <h3 class="text-white pb-4">We Have Made Conquest.</h3>
                                 <p class="text-white">
@@ -122,7 +123,7 @@
                     <div class="swiper-slide">
                         <div class="marker h-100">
                             <div class="dot"></div>
-                            <div class="line"></div>
+                            <div class="marker-line"></div>
                             <div class="text bg-transparent text-left">
                                 <h3 class="text-white pb-4">Mind-blowing Quality.</h3>
                                 <p class="text-white">
@@ -137,7 +138,7 @@
                     <div class="swiper-slide">
                         <div class="marker h-100">
                             <div class="dot"></div>
-                            <div class="line"></div>
+                            <div class="marker-line"></div>
                             <div class="text bg-transparent text-left">
                                 <h3 class="text-white pb-4">We Went Internationall!</h3>
                                 <p class="text-white">
@@ -153,7 +154,7 @@
                     <div class="swiper-slide">
                         <div class="marker h-100">
                             <div class="dot"></div>
-                            <div class="line"></div>
+                            <div class="marker-line"></div>
                             <div class="text bg-transparent text-left">
                                 <h3 class="text-white pb-4">The Cutting Edge of the Internet.</h3>
                                 <p class="text-white">
@@ -169,7 +170,7 @@
                     <div class="swiper-slide">
                         <div class="marker h-100">
                             <div class="dot"></div>
-                            <div class="line"></div>
+                            <div class="marker-line"></div>
                             <div class="text bg-transparent text-left">
                                 <h3 class="text-white pb-4">Who Knows What This Year Has in Store For Us.</h3>
                                 <p class="text-white">
@@ -190,7 +191,9 @@
         <div class="w-75 mx-auto">
             <div>
                 <div class="footer-elements">
-                    <img src="img/D-logo.png" alt="">
+                    <div class="d-none d-lg-block">
+                        <img src="img/D-logo.png" alt="">
+                    </div>
                     <div>
                         <h3 class="text-white">Services</h3>
                         <a href="development.html"><p>Web Development</p></a>
@@ -203,10 +206,12 @@
                         <a href="https://outofthevalley.co.uk/"><p>Out of the Valley</p></a>
                         <a href="https://www.amawaste.co.uk/"><p>AMA Waste Management</p></a>
                     </div>
-                    <a href="https://github.com/JakobLinn/Webbprojekt">
-                        <img class="w-75" src="img/githublogo-w.png" alt="">
-                        <h3 class="text-white">Visit Our Github!</h3>
-                    </a>
+                    <div class="d-none d-lg-block">
+                        <a href="https://github.com/JakobLinn/Webbprojekt">
+                            <img class="w-75" src="img/githublogo-w.png" alt="">
+                            <h3 class="text-white">Visit Our Github!</h3>
+                        </a>
+                    </div>
                     <div>
                         <img src="img/Deliver-v-logo.png" alt="">
                         <p>information@deliver.com</p>
@@ -216,7 +221,7 @@
                 </div>
             </div>
             <div class="footer-end">
-                <div>
+                <div class="d-none d-lg-flex">
                     <img class="icon" src="img/copyright.png" alt="Copyright icon">
                     <h3>Deliver Inc. 2021</h3>
                 </div>
