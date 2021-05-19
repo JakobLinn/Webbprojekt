@@ -85,11 +85,10 @@ h1, h2, h3, p{
     margin: 0px;
 }
 
-
 h2,h3{font-family: 'Libre Baskerville', serif;}
 h2{font-size: 40px;}
 h3{font-size: 32px;}
-p{font-size: 20px;}
+p{font-size: 20px;font-family: Gotham;}
 
 .highlight{color: #e9c534;}
 
