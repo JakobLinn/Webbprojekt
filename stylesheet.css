@@ -155,6 +155,7 @@ a{
 .service{
     transition: .2s;
     height: 150px;
+    margin: 5px 0px;
 }
 
 .service-element{
